@@ -28,7 +28,6 @@ const WomenProductPage = () => {
       return item 
     })
     setcategoryListupdated(res)
-    // dispatch(setProducts(res));
     const categoryCheckedList = res.filter((value) => value.isChecked === true);
     dispatch(setProductswishlist([...wishList,categoryCheckedList]));
   }
